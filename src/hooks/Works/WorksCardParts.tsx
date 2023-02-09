@@ -65,6 +65,7 @@ const WorksCardParts = () => {
             alt="画像1"
             className="rounded-xl"
           />
+          <p className="absolute  justify-center items-center">〇〇のサイト</p>
         </Carousel.Slide>
         <Carousel.Slide>
           <Image
@@ -74,6 +75,7 @@ const WorksCardParts = () => {
             alt="画像1"
             className="rounded-xl"
           />
+          <p className="absolute  justify-center items-center">〇〇のサイト</p>
         </Carousel.Slide>
         <Carousel.Slide>
           <Image
@@ -83,6 +85,7 @@ const WorksCardParts = () => {
             alt="画像1"
             className="rounded-xl"
           />
+          <p className="absolute  justify-center items-center">〇〇のサイト</p>
         </Carousel.Slide>
         <Carousel.Slide>
           <Image
@@ -92,6 +95,7 @@ const WorksCardParts = () => {
             alt="画像1"
             className="rounded-xl"
           />
+          <p className="absolute  justify-center items-center">〇〇のサイト</p>
         </Carousel.Slide>
       </Carousel>
     </motion.div>

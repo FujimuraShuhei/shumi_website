@@ -26,10 +26,10 @@ const Footer = () => {
         <Link href="/works" className="link link-hover">
           制作実績
         </Link>
-        <Link href="/blog" className="link link-hover">
+        <Link href="/blogs" className="link link-hover">
           ブログ
         </Link>
-        <Link href="/contact" className="link link-hover">
+        <Link href="/mail" className="link link-hover">
           お問い合わせ
         </Link>
       </div>
