@@ -3,9 +3,13 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="bg-stone-800 text-white sticky top-0 z-50">
+    <div className="bg-slate-900 text-white sticky top-0 z-50">
       <div className="md:container md:mx-auto flex justify-between h-20 items-center">
-        <Link href="/"><h1 className="text-2xl italic tracking-widest">Shumi</h1></Link>
+        <Link href="/">
+          <h1 className="text-2xl tracking-widest font-['Open_Sans'] italic">
+            Shumi
+          </h1>
+        </Link>
         <ul className="flex items-center text-sm">
           <Link href="/">
             <li className="ml-8">ホーム</li>

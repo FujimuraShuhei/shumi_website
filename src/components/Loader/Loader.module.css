@@ -1,0 +1,13 @@
+.LoadingMain {
+  width: 800px;
+  height: 500px;
+  background: #221212;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainh1 {
+  color: #fff;
+}
