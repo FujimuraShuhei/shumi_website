@@ -5,10 +5,12 @@ import WorksTitle from '../../hooks/Works/WorksTitle';
 
 const WorksCard = () => {
   return (
-    <Container size="lg">
-      <WorksTitle />
-      <WorksCardParts />
-    </Container>
+    <section className='mb-20'>
+      <Container size="lg">
+        <WorksTitle />
+        <WorksCardParts />
+      </Container>
+    </section>
   );
 };
 

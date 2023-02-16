@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} "py-20 text-white text-base mt-20"`}>
+    <footer className={`${styles.footer} "py-20 text-white text-base mt-30"`}>
       <div>
         <svg
           width="50"

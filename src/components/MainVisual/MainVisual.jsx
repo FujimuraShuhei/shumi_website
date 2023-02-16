@@ -35,7 +35,7 @@ const MainVisual = () => {
               alt="メインビジュアル画像"
             />
           </div>
-          <Image className={styles.mainSplush} src={mainSplush} alt="" />
+          <Image width={800} className={styles.mainSplush} src={mainSplush} alt="" />
         </div>
       </section>
     </div>

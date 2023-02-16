@@ -29,20 +29,20 @@ const WorksCardParts = () => {
         whileInView="onscreen" // 画面内に入ったらonscreen
         viewport={{ once: true, amount: 0.6 }}>
         <Carousel
-          slideSize="34%"
-          breakpoints={[{ maxWidth: 'md', slideSize: '10%' }]}
-          slideGap="lg"
+          slideSize="30%"
+          breakpoints={[{ maxWidth: 'xl', slideSize: '100%' }]}
+          slideGap="xl"
           mx="auto"
           height={600}
           controlSize={60}
           styles={{
             control: {
-              background: 'rgb(15 23 42) !important',
+              background: 'rgb(15 23 42)',
+              color: '#fff',
               width: 40,
               height: 40,
               opacity: 100,
               '&[data-inactive]': {
-                color: '#fff',
                 opacity: 0,
                 cursor: 'default',
               },
@@ -52,19 +52,15 @@ const WorksCardParts = () => {
             <Image
               src={works1}
               width={400}
-              height={1000}
               alt="画像1"
               className="rounded-xl mb-2"
             />
-            <p className="absolute justify-center items-center">
-              〇〇のサイト
-            </p>
+            <p className="absolute justify-center items-center">〇〇のサイト</p>
           </Carousel.Slide>
           <Carousel.Slide>
             <Image
               src={works1}
               width={400}
-              height={1000}
               alt="画像1"
               className="rounded-xl mb-2"
             />
@@ -76,7 +72,6 @@ const WorksCardParts = () => {
             <Image
               src={works1}
               width={400}
-              height={1000}
               alt="画像1"
               className="rounded-xl mb-2"
             />
@@ -88,7 +83,6 @@ const WorksCardParts = () => {
             <Image
               src={works1}
               width={400}
-              height={1000}
               alt="画像1"
               className="rounded-xl mb-2"
             />
@@ -100,7 +94,6 @@ const WorksCardParts = () => {
             <Image
               src={works1}
               width={400}
-              height={1000}
               alt="画像1"
               className="rounded-xl mb-2"
             />

@@ -10,9 +10,8 @@
   position: relative;
   z-index: 10;
 }
-.mainCircle{
-    position: absolute;
-
+.mainCircle {
+  position: absolute;
 }
 .mainBox_renueul {
   font-family: 'Inter', sans-serif;
@@ -57,10 +56,11 @@
   top: 40%;
   right: 12%;
 }
-.mainBox2{
-    position: relative;
-    z-index: 10;
+.mainBox2 {
+  position: relative;
+  z-index: 10;
 }
-.mainSplush{
-    position: absolute;
+.mainSplush {
+  position: absolute;
+  overflow: hidden;
 }
