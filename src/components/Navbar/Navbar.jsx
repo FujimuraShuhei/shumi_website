@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-900 text-white sticky top-0 z-50">
+    <div className={`${styles.header}  font-bold sticky top-0 z-100"`}>
       <div className="md:container md:mx-auto flex justify-between h-20 items-center">
         <Link href="/">
           <h1 className="text-2xl tracking-widest font-['Open_Sans'] italic">
@@ -23,10 +24,8 @@ const Navbar = () => {
           <Link href="blogs">
             <li className="ml-8">ブログ</li>
           </Link>
-          <Link href="mail">
-            <li className="ml-8 bg-cyan-900 px-6 py-3 rounded-lg font-bold text-white">
-              お問い合わせ
-            </li>
+          <Link href="contact">
+            <li className="ml-8">お問い合わせ</li>
           </Link>
         </ul>
       </div>

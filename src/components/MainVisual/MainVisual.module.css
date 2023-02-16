@@ -1,0 +1,66 @@
+.mainVisual_section {
+  height: 800px;
+  max-height: 800px;
+  width: 100%;
+  background: #f5f5f3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mainBox {
+  position: relative;
+  z-index: 10;
+}
+.mainCircle{
+    position: absolute;
+
+}
+.mainBox_renueul {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 32px;
+  color: #686868;
+}
+.main_h1 {
+  font-size: 110px;
+  letter-spacing: 3px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #2a3948;
+}
+.main_p2 {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3em;
+  margin-bottom: 24px;
+}
+.main_p3 {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+}
+.mainpc {
+  position: relative;
+}
+.mainsp {
+  position: absolute;
+  top: 40%;
+  right: 12%;
+}
+.mainBox2{
+    position: relative;
+    z-index: 10;
+}
+.mainSplush{
+    position: absolute;
+}

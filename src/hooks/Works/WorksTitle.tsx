@@ -13,7 +13,7 @@ const WorksTitle = () => {
     });
   }, [controls]);
   return (
-    <div className="mt-20 mb-10">
+    <div className="mt-20 mb-10 text-center">
       <motion.h2
         animate={controls}
         transition={{ duration: 2 }}

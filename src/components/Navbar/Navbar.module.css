@@ -1,0 +1,9 @@
+.header {
+  background: #ededed;
+  position: fixed;
+  z-index: 1000;
+}
+.header li {
+  list-style: none;
+  font-size: 16px;
+}

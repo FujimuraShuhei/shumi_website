@@ -1,19 +1,20 @@
 import Link from 'next/link';
 import React from 'react';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-slate-900 text-base-content mt-20">
+    <footer className={`${styles.footer} "py-20 text-white text-base mt-20"`}>
       <div>
         <svg
           width="50"
-          height="50"
+          height="200"
           viewBox="0 0 24 24"
           fillRule="evenodd"
           clipRule="evenodd"
           className="fill-current"></svg>
         <p>
-        神奈川県横浜市の
+          神奈川県横浜市の
           <br />
           シンプルなサイトブランディングなら Shumi
         </p>
@@ -29,7 +30,7 @@ const Footer = () => {
         <Link href="/blogs" className="link link-hover">
           ブログ
         </Link>
-        <Link href="/mail" className="link link-hover">
+        <Link href="/contact" className="link link-hover">
           お問い合わせ
         </Link>
       </div>

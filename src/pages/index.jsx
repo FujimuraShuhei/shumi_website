@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Link from 'next/link';
-import { client } from 'libs/client';
 import Loader from '../components/Loader/Loader';
 import WorksCard from '../components/WorksCard/WorksCard';
 import { MantineProvider } from '@mantine/core';
+import Link from 'next/link';
+import { client } from 'libs/client';
+import MainVisual from '../components/MainVisual/MainVisual';
 
 export default function Home({ blog }) {
   return (
@@ -17,28 +18,26 @@ export default function Home({ blog }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <MantineProvider>
-          <Loader />
-          <div>
-            <ul className="flex gap-10">
-              {blog.map((blog) => (
-                // eslint-disable-next-line react/jsx-key
-                <li key={blog.id}>
-                  <Link href={`/blog/${blog.id}`}>
-                    <img
-                      src={blog.eyecatch.url}
-                      width={640}
-                      height={320}
-                      alt="ブログアイキャッチ画像"
-                    />
-                    <h3 className="mt-8 text-xl font-bold">{blog.title}</h3>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <WorksCard />
-        </MantineProvider>
+        <MainVisual />
+        <WorksCard />
+        {/* <div>
+          <ul className="flex gap-10">
+            {blog.map((blog) => (
+              // eslint-disable-next-line react/jsx-key
+              <li key={blog.id}>
+                <Link href={`/blog/${blog.id}`}>
+                  <img
+                    src={blog.eyecatch.url}
+                    width={640}
+                    height={320}
+                    alt="ブログアイキャッチ画像"
+                  />
+                  <h3 className="mt-8 text-xl font-bold">{blog.title}</h3>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div> */}
       </main>
     </>
   );
