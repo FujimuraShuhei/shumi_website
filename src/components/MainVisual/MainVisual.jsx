@@ -30,12 +30,12 @@ const MainVisual = () => {
           <div className={styles.mainBox2}>
             <Image
               className={styles.mainpc}
-              width={750}
+              width={760}
               src={mainpc}
               alt="メインビジュアル画像"
             />
           </div>
-          <Image width={800} className={styles.mainSplush} src={mainSplush} alt="" />
+          <Image width={750} className={styles.mainSplush} src={mainSplush} alt="メインビジュアルの背景画像" />
         </div>
       </section>
     </div>

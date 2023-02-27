@@ -1,0 +1,68 @@
+.serviceSection {
+  position: relative;
+  z-index: 100;
+  background-image: url('/public/images/servicebg.jpg');
+}
+.servicebg {
+  z-index: -10;
+}
+.service_h2 {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 97px;
+  color: #246681;
+  letter-spacing: 0.1em;
+  padding-top: 120px;
+}
+.serviceBox {
+  width: 640px;
+  height: 500px;
+  border: 2px solid #2a3948;
+  border-radius: 10px;
+  background: #fff;
+}
+.serviceTextbox {
+  margin: 7.125rem auto 7.125rem 7.3125rem;
+  font-family: YuGothic, 'Yu Gothic Medium', 'Yu Gothic', Meiryo, sans-serif;
+  color: #2a3948;
+}
+.serviceTextbox_h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.serviceTextbox_ul {
+  margin-top: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  list-style: none;
+}
+.service_img {
+  position: relative;
+}
+.service01_bg {
+  margin-left: 200px;
+  position: absolute;
+  left: -14%;
+  top: 7%;
+}
+.service01 {
+  margin-left: 200px;
+  position: absolute;
+  left: -14%;
+  top: 7%;
+}
+@media screen and (max-width: 960px) {
+  .service01_bg {
+    margin-left: 100px;
+    position: absolute;
+    left: 7%;
+  }
+  .service01 {
+    margin-left: 100px;
+    position: absolute;
+    left: calc(7% + -100px);
+  }
+}

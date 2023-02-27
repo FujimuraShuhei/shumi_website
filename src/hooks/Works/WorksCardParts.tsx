@@ -3,7 +3,7 @@ import { Carousel } from '@mantine/carousel';
 import { motion } from 'framer-motion';
 import works1 from '/public/images/works1.jpg';
 import Image from 'next/image';
-import TopButton from '../Button/WorksButton';
+import TopButton from '../Button/arrowButton';
 
 const WorksCardParts = () => {
   return (

@@ -23,6 +23,6 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/Blog/BlogNew.jsx"
-  ],
+, "src/components/CTA/Cta.jsx"  ],
   "exclude": ["node_modules"]
 }

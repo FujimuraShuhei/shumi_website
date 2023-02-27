@@ -1,0 +1,15 @@
+.ctaButton {
+  background: #fff;
+  color: #2a3948;
+}
+.ctaBox {
+  background: #2a3948;
+  width: 630px;
+  
+}
+.ctaTextBox{
+    display: flex;
+    flex-direction: column;
+
+
+}

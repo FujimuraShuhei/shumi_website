@@ -1,0 +1,60 @@
+.procedureSection {
+  padding: 120px 0;
+}
+.procedure_h2 {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 97px;
+  color: #246681;
+  letter-spacing: 0.1em;
+  padding-top: 120px;
+}
+.box {
+  border: 2px solid #212121;
+  color: #212121;
+  background: #fff;
+  position: relative;
+}
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.subTitle {
+  font-family: 'Inter';
+  font-style: italic;
+  margin-bottom: 12px;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+.icon {
+  margin-bottom: 12px;
+}
+.description {
+  text-align: left;
+  letter-spacing: 0.2rem;
+}
+.number {
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #2a3948;
+  border: 2px solid #2a3948;
+  background: #fff;
+  padding: 12px 24px 12px 20px;
+  text-align: center;
+  border-radius: 90px;
+}
+
