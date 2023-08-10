@@ -7,6 +7,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 639px) {
+  .mainVisual_section {
+    grid-template-columns: 1fr;
+  }
+}
 .mainBox {
   position: relative;
   z-index: 10;
@@ -14,16 +19,17 @@
 .mainCircle {
   position: absolute;
 }
+
 .mainBox_renueul {
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 500;
   letter-spacing: 5px;
-  font-size: 32px;
+  font-size: 1.6rem;
   color: #686868;
 }
 .main_h1 {
-  font-size: 110px;
+  font-size: 8rem;
   letter-spacing: 3px;
   font-family: 'Inter', sans-serif;
   font-style: italic;
@@ -34,8 +40,8 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 52px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   display: flex;
   align-items: center;
   letter-spacing: 0.3em;
@@ -45,7 +51,7 @@
   font-family: 'Noto Sans JP';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 23px;
   letter-spacing: 0.1em;
 }
@@ -57,6 +63,7 @@
   top: 40%;
   right: 12%;
 }
+
 .mainBox2 {
   position: relative;
   z-index: 10;
@@ -64,5 +71,22 @@
 .mainSplush {
   position: absolute;
   overflow: hidden;
-  left:47%;
+  left: 47%;
+}
+@media screen and (max-width: 639px) {
+  .mainpc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .mainsp {
+    width: 30%;
+  }
+  .mainSplush {
+    width: 80%;
+    height: 54%;
+    display: flex;
+    justify-content: center;
+  }
 }

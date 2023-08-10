@@ -22,6 +22,9 @@ const MainVisual = () => {
           <Image
             className={styles.mainCircle}
             width={567}
+            sizes="(max-width: 640px) 50vw,
+              (max-width: 1024px) 50vw,
+              100vw"
             src={circle}
             alt="サークル"
           />
@@ -35,7 +38,12 @@ const MainVisual = () => {
               alt="メインビジュアル画像"
             />
           </div>
-          <Image width={750} className={styles.mainSplush} src={mainSplush} alt="メインビジュアルの背景画像" />
+          <Image
+            width={750}
+            className={styles.mainSplush}
+            src={mainSplush}
+            alt="メインビジュアルの背景画像"
+          />
         </div>
       </section>
     </div>

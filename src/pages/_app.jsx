@@ -1,17 +1,20 @@
-import Cta from '../components/CTA/Cta';
-import Footer from '../components/Footer/Footer';
+import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
+import styles from '../styles/loading.module.css';
 import '../styles/globals.css';
+import PageExitAnimation from '../components/PageExitAnimation';
+import PageEnterAnimation from '../components/PageEnterAnimation';
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
+
   return (
-    <div>
-      <Navbar className="sticky top-0 z-100" />
-      <div>
-        <Component {...pageProps} />
-      </div>
-      <Cta />
-      <Footer />
-    </div>
+    <>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+    </>
   );
 }
+
+export default App;

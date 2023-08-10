@@ -1,8 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
+import { client } from 'libs/client';
 
-const BlogTop = () => {
+const BlogTop = ({ blog }) => {
+  if (!blog) return null; // blogがなければ何も表示しない
+
   return (
     <div>
       <ul className="flex gap-10">
@@ -26,3 +29,15 @@ const BlogTop = () => {
 };
 
 export default BlogTop;
+
+export const getServerSideProps = async () => {
+  const data = await client.get({
+    endpoint: 'blog',
+    queries: { limit: 3, orders: '-publishedAt' }, // 最新3記事を取得
+  });
+  return {
+    props: {
+      blog: data.contents,
+    },
+  };
+};

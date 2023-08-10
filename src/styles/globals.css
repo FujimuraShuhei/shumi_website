@@ -24,7 +24,6 @@ body {
   font-size: 16px;
   font-family: '游ゴシック体', YuGothic, '游ゴシック Medium', 'Yu Gothic Medium',
     '游ゴシック', 'Yu Gothic', sans-serif;
-  
 }
 
 body {
@@ -139,5 +138,11 @@ button:hover .button-text {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: light;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 62.5%;
   }
 }

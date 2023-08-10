@@ -1,5 +1,6 @@
 .header {
   background: #ededed;
+  position: relative;
   position: fixed;
   z-index: 1000;
 }

@@ -7,9 +7,10 @@ import WorksCard from '../components/WorksCard/WorksCard';
 import { MantineProvider } from '@mantine/core';
 import Link from 'next/link';
 import { client } from 'libs/client';
-import MainVisual from '../components/MainVisual/MainVisual';
 import ServiceSection from '../components/ServiceSection/ServiceSection';
 import Procedure from '../components/Procedure/Procedure';
+import BlogTop from '../components/blog/BlogTop';
+import MainVisual from '../components/MainVisual/MainVisual';
 
 export default function Home({ blog }) {
   return (
@@ -29,24 +30,27 @@ export default function Home({ blog }) {
         <MainVisual />
         <ServiceSection />
         <WorksCard />
-        {/* <div>
-          <ul className="flex gap-10">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <ul className="grid md:grid-cols-3 lg:grid-cols-3 gap-4">
             {blog.map((blog) => (
-              // eslint-disable-next-line react/jsx-key
-              <li key={blog.id}>
+              <li key={blog.id} className="list-none">
                 <Link href={`/blog/${blog.id}`}>
                   <img
                     src={blog.eyecatch.url}
-                    width={640}
-                    height={320}
+                    sizes="100vw"
+                    style={{
+                      width: '100%',
+                      maxWidth: '100%',
+                      height: 'auto',
+                    }}
                     alt="ブログアイキャッチ画像"
                   />
-                  <h3 className="mt-8 text-xl font-bold">{blog.title}</h3>
+                  <h3 className="mt-4 text-md font-bold">{blog.title}</h3>
                 </Link>
               </li>
             ))}
           </ul>
-        </div> */}
+        </div>
         <Procedure />
       </main>
     </>
@@ -54,7 +58,10 @@ export default function Home({ blog }) {
 }
 
 export const getServerSideProps = async () => {
-  const data = await client.get({ endpoint: 'blog' });
+  const data = await client.get({
+    endpoint: 'blog',
+    queries: { limit: 3, orders: '-publishedAt' }, // 最新3記事を取得
+  });
   return {
     props: {
       blog: data.contents,

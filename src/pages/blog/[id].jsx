@@ -11,9 +11,12 @@ export default function BlogId({ blog }) {
           height={320}
           alt="ブログアイキャッチ画像"
         />
-        <h1 className="text-2xl font-bold mt-4">{blog.title}</h1>
-        <p className='text-sm'>{blog.publishedAt}</p>
-        <div className='mt-10 mb-20' dangerouslySetInnerHTML={{ __html: `${blog.body}` }} />
+        <h1 className="text-3xl font-bold mt-4">{blog.title}</h1>
+        <p className="text-sm">{blog.publishedAt}</p>
+        <div
+          className="mt-10 mb-20"
+          dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
+        />
       </div>
     </main>
   );
